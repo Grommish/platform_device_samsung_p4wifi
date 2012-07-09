@@ -29,3 +29,6 @@ TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
 # OTA Packaging
 TARGET_CUSTOM_RELEASETOOL := ./device/samsung/p4wifi/releasetools/squisher
+
+# Bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
