@@ -27,3 +27,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 14472970240
 
 TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
+# OTA Packaging
+TARGET_CUSTOM_RELEASETOOL := ./device/samsung/p4wifi/releasetools/squisher
