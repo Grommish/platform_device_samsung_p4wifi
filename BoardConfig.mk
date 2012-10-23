@@ -29,3 +29,5 @@ TARGET_KERNEL_SOURCE := kernel/samsung/p4wifi
 TARGET_KERNEL_CONFIG := pershoot_samsung_p4wifi-jb_defconfig
 TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
+# Use linaro optimized string routines
+TARGET_USE_LINARO_STRING_ROUTINES := true
