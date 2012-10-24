@@ -31,3 +31,6 @@ TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
 # Use linaro optimized string routines
 TARGET_USE_LINARO_STRING_ROUTINES := true
+
+# Compiler flags
+TARGET_EXTRA_CFLAGS += $(call cc-option,-mtune=cortex-a9) $(call cc-option,-mcpu=cortex-a9)
