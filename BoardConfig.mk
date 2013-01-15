@@ -29,3 +29,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/p4
 TARGET_KERNEL_CONFIG := pershoot_samsung_p4wifi-jb_defconfig
 TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
+ifneq (,$(filter true 1,$(TARGET_INCLUDE_EXTRA_CFLAGS)))
+TARGET_EXTRA_CFLAGS := $(call cc-option,-march=armv7-a) $(call cc-option,-mtune=cortex-a9) $(call cc-option,-mcpu=cortex-a9) $(call cc-option,-marm)
+endif
+
