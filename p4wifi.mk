@@ -55,10 +55,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/gps.xml:system/etc/gps.xml
 
-# frandom
-PRODUCT_COPY_FILES += \
-    device/samsung/p4wifi/prebuilt/etc/init.d/00random:system/etc/init.d/00random \
-
 # GPS config
 PRODUCT_PROPERTY_OVERRIDES += \
   my.gps=novzw
