@@ -31,3 +31,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_samsung_p4wifi-jb_defconfig
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/samsung/p4wifi/kernel
 
+# Toolchain
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.7
+TARGET_KERNEL_CUSTOM_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+TARGET_GCC_VERSION_AND := 4.8
